@@ -4,19 +4,24 @@
     padding: 0;
 }
 
-main {
+body {
     display: grid;
     gap: 5px;
     grid-template-rows: repeat(5, minmax(150px, 1fr));
     grid-template-columns: repeat(4, minmax(150px, 1fr));
     border: 1px solid red;
     width: 100%;
-
 }
 
-#aside, #header, #section, #article-1, #article-2 {
+#aside, #header, #projects, #announcements, #trending {
     border: 1px solid black;
+    display: flex;
 }
+
+#aside {
+    flex-direction: column;
+}
+
 
 #aside {
     grid-row: 1 / -1;
@@ -26,15 +31,15 @@ main {
     grid-column: 2 / 5;
 }
 
-#section {
+#projects {
     grid-row: 2 / -1;
     grid-column: 2 / 4;
 }
 
-#article-1 {
+#announcements {
     grid-row: 2 / 4;
 }
 
-#article-2 {
+#trending {
     grid-row: 4 / 6;
 }
