@@ -29,7 +29,7 @@ const articleData = [
         summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque excepturi quidem, velit deleniti quisquam recusa",
         id: 6,
     },
-    
+
 ]
 
 
@@ -42,10 +42,10 @@ function appendArticle() {
             <h3>${article.heading}</h3>
             <p>${article.summary}</p>
         </article>
-        `)
+        `);
     }).join("");
 
-    container.innerHTML =articles;
+    container.innerHTML = articles;
 }
 
 

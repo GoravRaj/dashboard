@@ -4,14 +4,31 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #EAECF0;
+    --secondary-color: #233D4D;
+    --highlisght-color: #FE7F2D;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+    --border-color: #cbd5e1;
+}
+
+/* LAYOUT */
+
 body {
     display: grid;
-    gap: 5px;
-    grid-template-rows: repeat(5, minmax(150px, 1fr));
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
-    border: 1px solid red;
+    gap: 20px; /* Increased gap for a cleaner look */
+    grid-template-rows: 90px repeat(4, minmax(120px, 1fr));
+    grid-template-columns: 260px repeat(3, 1fr);
     width: 100%;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
 }
+
+/* SECTIONS LAYOUT */
 
 #aside, #header, #projects, #announcements, #trending {
     border: 1px solid black;
@@ -20,8 +37,8 @@ body {
 
 #aside {
     flex-direction: column;
+    gap: 30px;
 }
-
 
 #aside {
     grid-row: 1 / -1;
@@ -42,4 +59,59 @@ body {
 
 #trending {
     grid-row: 4 / 6;
+}
+
+
+/* STYLES */
+
+#aside, #header, #projects, #announcements, #trending {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* SIDEBAR NAVIGATION */
+#aside {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 30px 20px;
+    gap: 35px;
+    border-radius: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+#aside nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#aside nav ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.2s ease;
+}
+
+#aside nav ul li a:hover {
+    color: var(--highlisght-color);
+}
+
+#aside #Account {
+    margin-top: auto; 
 }
