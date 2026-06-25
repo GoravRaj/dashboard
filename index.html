@@ -1,88 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" type="text/css"> 
-    <title>Dashboard</title>
-</head>
-<body>
-        <aside id="aside">
-            
-            <div class="logo">
-                <img src="" alt="">
-                <h1>Dashboard</h1>
-            </div>
-            <nav id="Primary">
-                <ul>
-                    <li><a href="#"><img src="" alt=""> HOME</a></li>
-                    <li><a href="#"><img src="" alt=""> PHONE</a></li>
-                    <li><a href="#"><img src="" alt=""> MESSAGES</a></li>
-                    <li><a href="#"><img src="" alt=""> HISTORY</a></li>
-                    <li><a href="#"><img src="" alt=""> TASKS</a></li>
-                    <li><a href="#"><img src="" alt=""> COMMUNITIES</a></li>
-                </ul>
-            </nav>
-            <nav id="Account">
-                <ul>
-                    <li><a href="#"><img src="" alt=""> SETTINGS</a></li>
-                    <li><a href="#"><img src="" alt=""> SUPPORT</a></li>
-                    <li><a href="#"><img src="" alt=""> PRIVACY</a></li>
-                </ul>
-            </nav>
-        </aside>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+		/>
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<aside id="aside">
+			<div class="logo">
+				<span class="mdi mdi-view-dashboard"></span>
+				<h1>Dashboard</h1>
+			</div>
+			<nav id="Primary">
+				<ul>
+					<li>
+						<a href="#"> <span class="mdi mdi-home"></span> HOME</a>
+					</li>
+					<li>
+						<a href="#">
+                            <span class="mdi mdi-phone"></span> PHONE</a>
+					</li>
+					<li>
+						<a href="#"><span class="mdi mdi-message mdi-flip-h"></span> MESSAGES</a>
+					</li>
+					<li>
+						<a href="#"><span class="mdi mdi-history"></span> HISTORY</a>
+					</li>
+					<li>
+						<a href="#"><span class="mdi mdi-calendar-check-outline"></span> TASKS</a>
+					</li>
+					<li>
+						<a href="#"><span class="mdi mdi-account-group"></span> COMMUNITIES</a>
+					</li>
+				</ul>
+			</nav>
+			<nav id="Account">
+				<ul>
+					<li>
+						<a href="#">
+                            <span class="mdi mdi-cog"></span> SETTINGS</a>
+					</li>
+					<li>
+                        <a href="#">
+						<span class="mdi mdi-face-agent"></span> SUPPORT</a>
+					</li>
+					<li>
+                        <a href="#">
+						<span class="mdi mdi-shield-check"></span> PRIVACY</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
 
-        <header id="header">
-            <form action="#" method="get">
-                <button type="submit">Search</button>
-                <input type="text" id="search" name="search" >
-            </form>
-            <div>Notification</div>
-            <div>Logo-pic</div>
-            <div>
-                Morgan Oakly
-            </div>
-        </header>
-        <section id="projects">
-            <h2>Your Projects</h2>
-            <div id="article-container">
-            </div>
-        </section>
-        <article id="announcements">
-            <h2>Announcements</h2>
-            <div>
-                <div>
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem,</p>
-                </div>
-                <div>
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem,</p>
-                </div>
-                <div>
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem,</p>
-                </div>
-            </div>
-        </article>
-        <article id="trending">
-            <h2>Trending</h2>
-            <div>
-                <div>
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem,</p>
-                </div>
-                <div>
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem,</p>
-                </div>
-                <div>
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem,</p>
-                </div>
-            </div>
-        </article>
+		<header id="header">
+			<form action="#" method="get">
+				<button type="submit">Search</button>
+				<input type="text" id="search" name="search" />
+			</form>
+            <ul>
+                <li>
+                    <a href="#"><span class="mdi mdi-bell-ring"></span></a>
+                </li>
+                <li>
+                    <span id="teddy-logo" class="mdi mdi-teddy-bear"></span>
+                </li>
+                <li id="txt-logo">
+                    Morgan Oakly
+                </li>
+            </ul>
+			
+			
+		</header>
+		<section id="projects">
+			<h2>Your Projects</h2>
+			<div id="article-container"></div>
+		</section>
+		<article id="announcements">
+			<h2>Announcements</h2>
+			<div>
+				<div>
+					<h3>Site Maintenance</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+						autem,
+					</p>
+				</div>
+				<div>
+					<h3>Site Maintenance</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+						autem,
+					</p>
+				</div>
+				<div>
+					<h3>Site Maintenance</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+						autem,
+					</p>
+				</div>
+			</div>
+		</article>
+		<article id="trending">
+			<h2>Trending</h2>
+			<div>
+				<div>
+					<h3>Site Maintenance</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+						autem,
+					</p>
+				</div>
+				<div>
+					<h3>Site Maintenance</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+						autem,
+					</p>
+				</div>
+				<div>
+					<h3>Site Maintenance</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+						autem,
+					</p>
+				</div>
+			</div>
+		</article>
 
-    <script src="./script.js"></script>
-</body>
+		<script src="./script.js"></script>
+	</body>
 </html>
