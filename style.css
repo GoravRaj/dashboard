@@ -115,3 +115,45 @@ body {
 #aside #Account {
     margin-top: auto; 
 }
+
+/* HEADER */
+#header {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+#header form {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+#header input[type="text"] {
+    width: 70%;
+    max-width: 450px;
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background-color: #f8fafc;
+    outline: none;
+}
+
+#header button {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#header button:hover {
+    background-color: #335366;
+}
