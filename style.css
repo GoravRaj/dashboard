@@ -31,7 +31,6 @@ body {
 /* SECTIONS LAYOUT */
 
 #aside, #header, #projects, #announcements, #trending {
-    border: 1px solid black;
     display: flex;
 }
 
